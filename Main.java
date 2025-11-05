@@ -1,22 +1,22 @@
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Scanner;
+  class Laptop {
+    String brand;
+    String ram;
+    void displayInfo() {
+        System.out.println("Brand:"+brand+", RamGB:"+ram);
+    }
+}
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
+    public class Main {
+    public static void main(String[] args) {
+    Laptop l1 = new Laptop();;
+    l1.brand = "lenovo";
+    l1.ram ="8GB";
 
-        // TODO A1: Ask the user for item name, price, and quantity
-        System
-        // Example:
-        // Item: Milk
-        // Price: 3.49
-        // Quantity: 2
+    Laptop l2 = new Laptop();
+    l2.brand = "hp";
+    l2.ram ="16GB";
 
-        // TODO B1: Calculate the total cost (price * quantity)
-
-        // TODO C1: Create a FileWriter for "receipt.txt"
-        // TODO C2: Write all purchase details to the file
-        // TODO C3: Close the FileWriter and print "Receipt saved!"
+    l1.displayInfo();
+    l2.displayInfo();
     }
 }
